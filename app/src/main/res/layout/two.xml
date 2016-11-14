@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3300ff00"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:gravity="center"
+        android:text="可\n惜\n是\n别\n人\n的\n女\n朋\n友"
+        android:textSize="40dp" />
+</LinearLayout>

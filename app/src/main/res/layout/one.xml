@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="#33ff0000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:text="这\n是\n一\n个\n美\n女"
+        android:gravity="center"
+        android:textSize="40dp"/>
+</LinearLayout>

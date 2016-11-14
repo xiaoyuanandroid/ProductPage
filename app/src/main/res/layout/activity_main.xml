@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.xiaoyuan.StickyScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="500dip"
+                    android:background="@mipmap/meinv"/>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="美" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:gravity="center"
+                    android:text="女"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:gravity="center"
+                    android:text="美"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:gravity="center"
+                    android:text="不"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:gravity="center"
+                    android:text="美"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:tag="sticky">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/infoText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="美女信息"
+                            android:textColor="#000000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/secondText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="美女介绍"
+                            android:textColor="#000000"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/tabMainContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:minHeight="400dp">
+
+                </FrameLayout>
+            </LinearLayout>
+        </com.xiaoyuan.StickyScrollView>
+
+        <RelativeLayout
+            android:id="@+id/ll_good_detail"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="#00000000"
+            android:paddingTop="@dimen/spacing_normal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dip"
+                android:layout_centerHorizontal="true"
+                android:text="返回"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dip"
+                android:text="美女"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:layout_centerHorizontal="true"
+                android:text="分享"/>
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>
